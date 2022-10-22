@@ -3865,22 +3865,8 @@
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="VALUE-1">
-                                                                                      <block type="CreateVector">
-                                                                                        <value name="VALUE-0">
-                                                                                          <block type="Number">
-                                                                                            <field name="NUM">-90.2</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <value name="VALUE-1">
-                                                                                          <block type="Number">
-                                                                                            <field name="NUM">72.5</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <value name="VALUE-2">
-                                                                                          <block type="Number">
-                                                                                            <field name="NUM">273.5</field>
-                                                                                          </block>
-                                                                                        </value>
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">0</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
@@ -4343,8 +4329,17 @@
                                                                                                                                                                                                           <block type="subroutineInstanceBlock">
                                                                                                                                                                                                             <field name="SUBROUTINE_NAME">setSecureArea</field>
                                                                                                                                                                                                             <next>
-                                                                                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                                                                                <field name="SUBROUTINE_NAME">FitstRoundSpawn</field>
+                                                                                                                                                                                                              <block type="Wait">
+                                                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                                                  <block type="Number">
+                                                                                                                                                                                                                    <field name="NUM">30</field>
+                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                <next>
+                                                                                                                                                                                                                  <block type="subroutineInstanceBlock">
+                                                                                                                                                                                                                    <field name="SUBROUTINE_NAME">FirstRoundSpawn</field>
+                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                </next>
                                                                                                                                                                                                               </block>
                                                                                                                                                                                                             </next>
                                                                                                                                                                                                           </block>
@@ -9017,8 +9012,8 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" collapsed="true" deletable="false" x="383" y="2352">
-    <field name="SUBROUTINE_NAME">FitstRoundSpawn</field>
+  <block type="subroutineBlock" collapsed="true" deletable="false" x="375" y="2355">
+    <field name="SUBROUTINE_NAME">FirstRoundSpawn</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
         <value name="VALUE-0">
@@ -21506,8 +21501,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="Number" x="-1126" y="3618">
-    <field name="NUM">0</field>
   </block>
 </xml>
