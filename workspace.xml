@@ -5597,12 +5597,7 @@
                                                                                                                                       <block type="Message">
                                                                                                                                         <value name="VALUE-0">
                                                                                                                                           <block type="Text">
-                                                                                                                                            <field name="TEXT">${}</field>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                          <block type="Number">
-                                                                                                                                            <field name="NUM">1200</field>
+                                                                                                                                            <field name="TEXT">1200</field>
                                                                                                                                           </block>
                                                                                                                                         </value>
                                                                                                                                       </block>
@@ -9596,14 +9591,14 @@
                                                                             <value name="VALUE-1">
                                                                               <block type="IfThenElse">
                                                                                 <value name="VALUE-0">
-                                                                                  <block type="Equals">
+                                                                                  <block type="GreaterThan">
                                                                                     <value name="VALUE-0">
                                                                                       <block type="GetVariable">
                                                                                         <value name="VALUE-0">
                                                                                           <block type="variableReferenceBlock">
                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                            <field name="VAR" id=";ci#c{.hKKU9|FFUhOoi" variabletype="Global">roundstarted</field>
+                                                                                            <field name="VAR" id="piLnxW6I|k3!:G{jbO_N" variabletype="Global">zombie_count</field>
                                                                                           </block>
                                                                                         </value>
                                                                                       </block>
@@ -9690,14 +9685,14 @@
                                                                                     <value name="VALUE-1">
                                                                                       <block type="IfThenElse">
                                                                                         <value name="VALUE-0">
-                                                                                          <block type="Equals">
+                                                                                          <block type="GreaterThan">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="GetVariable">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="variableReferenceBlock">
                                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                                    <field name="VAR" id=";ci#c{.hKKU9|FFUhOoi" variabletype="Global">roundstarted</field>
+                                                                                                    <field name="VAR" id="piLnxW6I|k3!:G{jbO_N" variabletype="Global">zombie_count</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                               </block>
