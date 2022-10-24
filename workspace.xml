@@ -5563,6 +5563,303 @@
       </block>
     </statement>
   </block>
+  <block type="subroutineBlock" collapsed="true" deletable="false" x="15" y="2510">
+    <field name="SUBROUTINE_NAME">ZombieSpawnAtLocation</field>
+    <statement name="ACTIONS">
+      <block type="If">
+        <value name="VALUE-0">
+          <block type="Equals">
+            <value name="VALUE-0">
+              <block type="CountOf">
+                <value name="VALUE-0">
+                  <block type="FilteredArray">
+                    <value name="VALUE-0">
+                      <block type="AllPlayers"></block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="And">
+                        <value name="VALUE-0">
+                          <block type="Equals">
+                            <value name="VALUE-0">
+                              <block type="GetTeamId">
+                                <value name="VALUE-0">
+                                  <block type="CurrentArrayElement"></block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="GetTeamId">
+                                <value name="VALUE-0">
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="GetSoldierState">
+                            <value name="VALUE-0">
+                              <block type="CurrentArrayElement"></block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="SoldierStateBoolItem">
+                                <field name="VALUE-0">SoldierStateBool</field>
+                                <field name="VALUE-1">IsAlive</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="GetVariable">
+                <value name="VALUE-0">
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="SetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="false"></mutation>
+                <field name="OBJECTTYPE">Global</field>
+                <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">-1</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="SetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="false"></mutation>
+                <field name="OBJECTTYPE">Global</field>
+                <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Add">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="Teleport">
+                <value name="VALUE-0">
+                  <block type="EventPlayer"></block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="RandomValueInArray">
+                    <value name="VALUE-0">
+                      <block type="FilteredArray">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="q5j]E#sBf7mKAfp=C6EV" variabletype="Global">Area_4_Coordinates</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="And">
+                            <value name="VALUE-0">
+                              <block type="GreaterThan">
+                                <value name="VALUE-0">
+                                  <block type="DistanceBetween">
+                                    <value name="VALUE-0">
+                                      <block type="CurrentArrayElement"></block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="GetSoldierState">
+                                        <value name="VALUE-0">
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="FilteredArray">
+                                                <value name="VALUE-0">
+                                                  <block type="AllPlayers"></block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Equals">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetTeamId">
+                                                        <value name="VALUE-0">
+                                                          <block type="CurrentArrayElement"></block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="GetTeamId">
+                                                        <value name="VALUE-0">
+                                                          <block type="Number">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="SoldierStateVectorItem">
+                                            <field name="VALUE-0">SoldierStateVector</field>
+                                            <field name="VALUE-1">GetPosition</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">20</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="LessThan">
+                                <value name="VALUE-0">
+                                  <block type="DistanceBetween">
+                                    <value name="VALUE-0">
+                                      <block type="CurrentArrayElement"></block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="GetSoldierState">
+                                        <value name="VALUE-0">
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="FilteredArray">
+                                                <value name="VALUE-0">
+                                                  <block type="AllPlayers"></block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Equals">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetTeamId">
+                                                        <value name="VALUE-0">
+                                                          <block type="CurrentArrayElement"></block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="GetTeamId">
+                                                        <value name="VALUE-0">
+                                                          <block type="Number">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="SoldierStateVectorItem">
+                                            <field name="VALUE-0">SoldierStateVector</field>
+                                            <field name="VALUE-1">GetPosition</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">50</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-2">
+                  <block type="RandomReal">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">6.28</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
   <block type="modBlock" deletable="false" x="-1688" y="2642">
     <statement name="RULES">
       <block type="ruleBlock">
@@ -13983,303 +14280,6 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" collapsed="true" deletable="false" x="362" y="2578">
-    <field name="SUBROUTINE_NAME">ZombieSpawnAtLocation</field>
-    <statement name="ACTIONS">
-      <block type="If">
-        <value name="VALUE-0">
-          <block type="Equals">
-            <value name="VALUE-0">
-              <block type="CountOf">
-                <value name="VALUE-0">
-                  <block type="FilteredArray">
-                    <value name="VALUE-0">
-                      <block type="AllPlayers"></block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="And">
-                        <value name="VALUE-0">
-                          <block type="Equals">
-                            <value name="VALUE-0">
-                              <block type="GetTeamId">
-                                <value name="VALUE-0">
-                                  <block type="CurrentArrayElement"></block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetTeamId">
-                                <value name="VALUE-0">
-                                  <block type="Number">
-                                    <field name="NUM">1</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="GetSoldierState">
-                            <value name="VALUE-0">
-                              <block type="CurrentArrayElement"></block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="SoldierStateBoolItem">
-                                <field name="VALUE-0">SoldierStateBool</field>
-                                <field name="VALUE-1">IsAlive</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">-1</field>
-              </block>
-            </value>
-          </block>
-        </statement>
-        <next>
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Add">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">1</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <next>
-              <block type="Teleport">
-                <value name="VALUE-0">
-                  <block type="EventPlayer"></block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="RandomValueInArray">
-                    <value name="VALUE-0">
-                      <block type="FilteredArray">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="q5j]E#sBf7mKAfp=C6EV" variabletype="Global">Area_4_Coordinates</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="And">
-                            <value name="VALUE-0">
-                              <block type="GreaterThan">
-                                <value name="VALUE-0">
-                                  <block type="DistanceBetween">
-                                    <value name="VALUE-0">
-                                      <block type="CurrentArrayElement"></block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetSoldierState">
-                                        <value name="VALUE-0">
-                                          <block type="ValueInArray">
-                                            <value name="VALUE-0">
-                                              <block type="FilteredArray">
-                                                <value name="VALUE-0">
-                                                  <block type="AllPlayers"></block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="Equals">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetTeamId">
-                                                        <value name="VALUE-0">
-                                                          <block type="CurrentArrayElement"></block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="GetTeamId">
-                                                        <value name="VALUE-0">
-                                                          <block type="Number">
-                                                            <field name="NUM">1</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="SoldierStateVectorItem">
-                                            <field name="VALUE-0">SoldierStateVector</field>
-                                            <field name="VALUE-1">GetPosition</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">20</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="LessThan">
-                                <value name="VALUE-0">
-                                  <block type="DistanceBetween">
-                                    <value name="VALUE-0">
-                                      <block type="CurrentArrayElement"></block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetSoldierState">
-                                        <value name="VALUE-0">
-                                          <block type="ValueInArray">
-                                            <value name="VALUE-0">
-                                              <block type="FilteredArray">
-                                                <value name="VALUE-0">
-                                                  <block type="AllPlayers"></block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="Equals">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetTeamId">
-                                                        <value name="VALUE-0">
-                                                          <block type="CurrentArrayElement"></block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="GetTeamId">
-                                                        <value name="VALUE-0">
-                                                          <block type="Number">
-                                                            <field name="NUM">1</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="r$R[g),JBem?4~V?!3!$" variabletype="Global">Selected_Player</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="SoldierStateVectorItem">
-                                            <field name="VALUE-0">SoldierStateVector</field>
-                                            <field name="VALUE-1">GetPosition</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">50</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-2">
-                  <block type="RandomReal">
-                    <value name="VALUE-0">
-                      <block type="Number">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">6.28</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </statement>
-  </block>
   <block type="subroutineBlock" collapsed="true" deletable="false" x="-402" y="2674">
     <field name="SUBROUTINE_NAME">C3_Spawns</field>
     <statement name="ACTIONS">
@@ -21301,7 +21301,7 @@
     </statement>
   </block>
   <block type="Not" x="10595" y="4077"></block>
-  <block type="subroutineBlock" deletable="false" x="1791" y="5080">
+  <block type="subroutineBlock" deletable="false" x="1844" y="5587">
     <field name="SUBROUTINE_NAME">BuildBuyMenuDisplay</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -21340,7 +21340,18 @@
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="GetVariable"></block>
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="true"></mutation>
+                        <field name="OBJECTTYPE">Player</field>
+                        <field name="VAR" id="_K2:s`@LDa%bz[:+(Q4x" variabletype="Player">SelectedItem</field>
+                        <value name="OBJECT">
+                          <block type="EventPlayer"></block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
                 </value>
               </block>
             </value>
