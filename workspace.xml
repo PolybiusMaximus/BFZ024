@@ -8785,12 +8785,21 @@
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="VALUE-1">
-                                                                                  <block type="GetVariable">
+                                                                                  <block type="Subtract">
                                                                                     <value name="VALUE-0">
-                                                                                      <block type="variableReferenceBlock">
-                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id="O.wNX+HwahdoG6hV,4w7" variabletype="Global">RoundCount</field>
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                            <field name="VAR" id="O.wNX+HwahdoG6hV,4w7" variabletype="Global">RoundCount</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">1</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
