@@ -15341,62 +15341,43 @@
                                                                   </block>
                                                                 </value>
                                                                 <next>
-                                                                  <block type="SetVariable">
+                                                                  <block type="EnableInputRestriction">
                                                                     <value name="VALUE-0">
-                                                                      <block type="variableReferenceBlock">
-                                                                        <mutation isObjectVar="true"></mutation>
-                                                                        <field name="OBJECTTYPE">Player</field>
-                                                                        <field name="VAR" id="SFZ:|t9{AW1$fdg6!#f?" variabletype="Player">PlayerCash</field>
-                                                                        <value name="OBJECT">
-                                                                          <block type="EventPlayer"></block>
-                                                                        </value>
-                                                                      </block>
+                                                                      <block type="EventPlayer"></block>
                                                                     </value>
                                                                     <value name="VALUE-1">
-                                                                      <block type="Number">
-                                                                        <field name="NUM">100000</field>
+                                                                      <block type="RestrictedInputsItem">
+                                                                        <field name="VALUE-0">RestrictedInputs</field>
+                                                                        <field name="VALUE-1">Jump</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-2">
+                                                                      <block type="Boolean">
+                                                                        <field name="BOOL">TRUE</field>
                                                                       </block>
                                                                     </value>
                                                                     <next>
-                                                                      <block type="EnableInputRestriction">
+                                                                      <block type="AddSoldierWeapon">
                                                                         <value name="VALUE-0">
                                                                           <block type="EventPlayer"></block>
                                                                         </value>
                                                                         <value name="VALUE-1">
-                                                                          <block type="RestrictedInputsItem">
-                                                                            <field name="VALUE-0">RestrictedInputs</field>
-                                                                            <field name="VALUE-1">Jump</field>
-                                                                          </block>
-                                                                        </value>
-                                                                        <value name="VALUE-2">
-                                                                          <block type="Boolean">
-                                                                            <field name="BOOL">TRUE</field>
+                                                                          <block type="SecondaryWeaponsItem">
+                                                                            <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
+                                                                            <field name="VALUE-1">M1911_ALX</field>
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="AddSoldierWeapon">
+                                                                          <block type="ForceSwitchInventory">
                                                                             <value name="VALUE-0">
                                                                               <block type="EventPlayer"></block>
                                                                             </value>
                                                                             <value name="VALUE-1">
-                                                                              <block type="SecondaryWeaponsItem">
-                                                                                <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
-                                                                                <field name="VALUE-1">M1911_ALX</field>
+                                                                              <block type="InventorySlotsItem">
+                                                                                <field name="VALUE-0">InventorySlots</field>
+                                                                                <field name="VALUE-1">SecondaryWeapon</field>
                                                                               </block>
                                                                             </value>
-                                                                            <next>
-                                                                              <block type="ForceSwitchInventory">
-                                                                                <value name="VALUE-0">
-                                                                                  <block type="EventPlayer"></block>
-                                                                                </value>
-                                                                                <value name="VALUE-1">
-                                                                                  <block type="InventorySlotsItem">
-                                                                                    <field name="VALUE-0">InventorySlots</field>
-                                                                                    <field name="VALUE-1">SecondaryWeapon</field>
-                                                                                  </block>
-                                                                                </value>
-                                                                              </block>
-                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
@@ -24753,6 +24734,23 @@
         </value>
       </block>
     </statement>
+  </block>
+  <block type="SetVariable" x="-474" y="7291">
+    <value name="VALUE-0">
+      <block type="variableReferenceBlock">
+        <mutation isObjectVar="true"></mutation>
+        <field name="OBJECTTYPE">Player</field>
+        <field name="VAR" id="SFZ:|t9{AW1$fdg6!#f?" variabletype="Player">PlayerCash</field>
+        <value name="OBJECT">
+          <block type="EventPlayer"></block>
+        </value>
+      </block>
+    </value>
+    <value name="VALUE-1">
+      <block type="Number">
+        <field name="NUM">100000</field>
+      </block>
+    </value>
   </block>
   <block type="EnableObjective" x="121" y="18427">
     <value name="VALUE-0">
