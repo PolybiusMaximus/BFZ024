@@ -25037,7 +25037,7 @@
                                                         </value>
                                                         <value name="VALUE-1">
                                                           <block type="Number">
-                                                            <field name="NUM">71.8</field>
+                                                            <field name="NUM">72.3</field>
                                                           </block>
                                                         </value>
                                                         <value name="VALUE-2">
@@ -25064,7 +25064,7 @@
                                                             </value>
                                                             <value name="VALUE-1">
                                                               <block type="Number">
-                                                                <field name="NUM">75.65</field>
+                                                                <field name="NUM">76.15</field>
                                                               </block>
                                                             </value>
                                                             <value name="VALUE-2">
@@ -25091,7 +25091,7 @@
                                                                 </value>
                                                                 <value name="VALUE-1">
                                                                   <block type="Number">
-                                                                    <field name="NUM">75.5</field>
+                                                                    <field name="NUM">76</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="VALUE-2">
@@ -25382,7 +25382,7 @@
       </block>
     </statement>
   </block>
-  <block type="ruleBlock" collapsed="true" x="-1713" y="23307">
+  <block type="ruleBlock" collapsed="true" x="447" y="22996">
     <mutation isOnGoingEvent="false"></mutation>
     <field name="NAME">New Rule</field>
     <field name="EVENTTYPE">OnPlayerDied</field>
