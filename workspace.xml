@@ -3214,7 +3214,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" collapsed="true" deletable="false" x="1285" y="2332">
+  <block type="subroutineBlock" collapsed="true" deletable="false" x="1267" y="2335">
     <field name="SUBROUTINE_NAME">BuyDoor1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -3399,7 +3399,7 @@
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="SetWorldIconPosition">
+                                      <block type="SetWorldIconOwner">
                                         <value name="VALUE-0">
                                           <block type="WorldIconsItem">
                                             <field name="VALUE-0">WorldIcons</field>
@@ -3407,26 +3407,16 @@
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="CreateVector">
+                                          <block type="GetTeamId">
                                             <value name="VALUE-0">
                                               <block type="Number">
-                                                <field name="NUM">-39.1</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="Number">
-                                                <field name="NUM">76.65</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-2">
-                                              <block type="Number">
-                                                <field name="NUM">247.5</field>
+                                                <field name="NUM">1</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="SetWorldIconText">
+                                          <block type="SetWorldIconPosition">
                                             <value name="VALUE-0">
                                               <block type="WorldIconsItem">
                                                 <field name="VALUE-0">WorldIcons</field>
@@ -3434,16 +3424,26 @@
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="Message">
+                                              <block type="CreateVector">
                                                 <value name="VALUE-0">
-                                                  <block type="Text">
-                                                    <field name="TEXT">GUNSMITH</field>
+                                                  <block type="Number">
+                                                    <field name="NUM">-39.1</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">76.65</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="Number">
+                                                    <field name="NUM">247.5</field>
                                                   </block>
                                                 </value>
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="SetWorldIconImage">
+                                              <block type="SetWorldIconText">
                                                 <value name="VALUE-0">
                                                   <block type="WorldIconsItem">
                                                     <field name="VALUE-0">WorldIcons</field>
@@ -3451,13 +3451,16 @@
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
-                                                  <block type="WorldIconImagesItem">
-                                                    <field name="VALUE-0">WorldIconImages</field>
-                                                    <field name="VALUE-1">Assist</field>
+                                                  <block type="Message">
+                                                    <value name="VALUE-0">
+                                                      <block type="Text">
+                                                        <field name="TEXT">GUNSMITH</field>
+                                                      </block>
+                                                    </value>
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="EnableWorldIconText">
+                                                  <block type="SetWorldIconImage">
                                                     <value name="VALUE-0">
                                                       <block type="WorldIconsItem">
                                                         <field name="VALUE-0">WorldIcons</field>
@@ -3465,12 +3468,13 @@
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
-                                                      <block type="Boolean">
-                                                        <field name="BOOL">TRUE</field>
+                                                      <block type="WorldIconImagesItem">
+                                                        <field name="VALUE-0">WorldIconImages</field>
+                                                        <field name="VALUE-1">Assist</field>
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="EnableWorldIconImage">
+                                                      <block type="EnableWorldIconText">
                                                         <value name="VALUE-0">
                                                           <block type="WorldIconsItem">
                                                             <field name="VALUE-0">WorldIcons</field>
@@ -3482,6 +3486,21 @@
                                                             <field name="BOOL">TRUE</field>
                                                           </block>
                                                         </value>
+                                                        <next>
+                                                          <block type="EnableWorldIconImage">
+                                                            <value name="VALUE-0">
+                                                              <block type="WorldIconsItem">
+                                                                <field name="VALUE-0">WorldIcons</field>
+                                                                <field name="VALUE-1">B</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Boolean">
+                                                                <field name="BOOL">TRUE</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
                                                       </block>
                                                     </next>
                                                   </block>
@@ -8182,7 +8201,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" collapsed="true" deletable="false" x="1273" y="2403">
+  <block type="subroutineBlock" collapsed="true" deletable="false" x="1262" y="2401">
     <field name="SUBROUTINE_NAME">BuyDoor2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -12862,7 +12881,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" collapsed="true" deletable="false" x="1287" y="2474">
+  <block type="subroutineBlock" collapsed="true" deletable="false" x="1272" y="2469">
     <field name="SUBROUTINE_NAME">Teleporter</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12965,18 +12984,7 @@
                                   <block type="Message">
                                     <value name="VALUE-0">
                                       <block type="Text">
-                                        <field name="TEXT">${}</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="Gi=*q8-lZb(V{kEh./YM" variabletype="Global">AreaCost</field>
-                                          </block>
-                                        </value>
+                                        <field name="TEXT">$1500</field>
                                       </block>
                                     </value>
                                   </block>
@@ -13967,7 +13975,7 @@
                                                                               </block>
                                                                             </value>
                                                                             <next>
-                                                                              <block type="SetWorldIconText">
+                                                                              <block type="SetWorldIconOwner">
                                                                                 <value name="VALUE-0">
                                                                                   <block type="WorldIconsItem">
                                                                                     <field name="VALUE-0">WorldIcons</field>
@@ -13975,15 +13983,10 @@
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="VALUE-1">
-                                                                                  <block type="Message">
+                                                                                  <block type="GetTeamId">
                                                                                     <value name="VALUE-0">
-                                                                                      <block type="Text">
-                                                                                        <field name="TEXT">${}</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <value name="VALUE-1">
                                                                                       <block type="Number">
-                                                                                        <field name="NUM">2000</field>
+                                                                                        <field name="NUM">2</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
@@ -13993,34 +13996,42 @@
                                                                                     <value name="VALUE-0">
                                                                                       <block type="WorldIconsItem">
                                                                                         <field name="VALUE-0">WorldIcons</field>
-                                                                                        <field name="VALUE-1">C</field>
+                                                                                        <field name="VALUE-1">B</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="VALUE-1">
                                                                                       <block type="Message">
                                                                                         <value name="VALUE-0">
                                                                                           <block type="Text">
-                                                                                            <field name="TEXT">SPAS-12: $1500</field>
+                                                                                            <field name="TEXT">${}</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="VALUE-1">
+                                                                                          <block type="Number">
+                                                                                            <field name="NUM">2000</field>
                                                                                           </block>
                                                                                         </value>
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
-                                                                                      <block type="SetWorldIconImage">
+                                                                                      <block type="SetWorldIconText">
                                                                                         <value name="VALUE-0">
                                                                                           <block type="WorldIconsItem">
                                                                                             <field name="VALUE-0">WorldIcons</field>
-                                                                                            <field name="VALUE-1">B</field>
+                                                                                            <field name="VALUE-1">C</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <value name="VALUE-1">
-                                                                                          <block type="WorldIconImagesItem">
-                                                                                            <field name="VALUE-0">WorldIconImages</field>
-                                                                                            <field name="VALUE-1">Cross</field>
+                                                                                          <block type="Message">
+                                                                                            <value name="VALUE-0">
+                                                                                              <block type="Text">
+                                                                                                <field name="TEXT">SPAS-12: $1500</field>
+                                                                                              </block>
+                                                                                            </value>
                                                                                           </block>
                                                                                         </value>
                                                                                         <next>
-                                                                                          <block type="SetWorldIconOwner">
+                                                                                          <block type="SetWorldIconImage">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="WorldIconsItem">
                                                                                                 <field name="VALUE-0">WorldIcons</field>
@@ -14028,16 +14039,13 @@
                                                                                               </block>
                                                                                             </value>
                                                                                             <value name="VALUE-1">
-                                                                                              <block type="GetTeamId">
-                                                                                                <value name="VALUE-0">
-                                                                                                  <block type="Number">
-                                                                                                    <field name="NUM">2</field>
-                                                                                                  </block>
-                                                                                                </value>
+                                                                                              <block type="WorldIconImagesItem">
+                                                                                                <field name="VALUE-0">WorldIconImages</field>
+                                                                                                <field name="VALUE-1">DangerPing</field>
                                                                                               </block>
                                                                                             </value>
                                                                                             <next>
-                                                                                              <block type="EnableWorldIconText">
+                                                                                              <block type="SetWorldIconOwner">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="WorldIconsItem">
                                                                                                     <field name="VALUE-0">WorldIcons</field>
@@ -14045,12 +14053,16 @@
                                                                                                   </block>
                                                                                                 </value>
                                                                                                 <value name="VALUE-1">
-                                                                                                  <block type="Boolean">
-                                                                                                    <field name="BOOL">TRUE</field>
+                                                                                                  <block type="GetTeamId">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">2</field>
+                                                                                                      </block>
+                                                                                                    </value>
                                                                                                   </block>
                                                                                                 </value>
                                                                                                 <next>
-                                                                                                  <block type="EnableWorldIconImage">
+                                                                                                  <block type="EnableWorldIconText">
                                                                                                     <value name="VALUE-0">
                                                                                                       <block type="WorldIconsItem">
                                                                                                         <field name="VALUE-0">WorldIcons</field>
@@ -14063,11 +14075,11 @@
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <next>
-                                                                                                      <block type="EnableWorldIconText">
+                                                                                                      <block type="EnableWorldIconImage">
                                                                                                         <value name="VALUE-0">
                                                                                                           <block type="WorldIconsItem">
                                                                                                             <field name="VALUE-0">WorldIcons</field>
-                                                                                                            <field name="VALUE-1">C</field>
+                                                                                                            <field name="VALUE-1">B</field>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <value name="VALUE-1">
@@ -14076,7 +14088,7 @@
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <next>
-                                                                                                          <block type="EnableWorldIconImage">
+                                                                                                          <block type="EnableWorldIconText">
                                                                                                             <value name="VALUE-0">
                                                                                                               <block type="WorldIconsItem">
                                                                                                                 <field name="VALUE-0">WorldIcons</field>
@@ -14089,7 +14101,7 @@
                                                                                                               </block>
                                                                                                             </value>
                                                                                                             <next>
-                                                                                                              <block type="SetWorldIconPosition">
+                                                                                                              <block type="EnableWorldIconImage">
                                                                                                                 <value name="VALUE-0">
                                                                                                                   <block type="WorldIconsItem">
                                                                                                                     <field name="VALUE-0">WorldIcons</field>
@@ -14097,24 +14109,39 @@
                                                                                                                   </block>
                                                                                                                 </value>
                                                                                                                 <value name="VALUE-1">
-                                                                                                                  <block type="CreateVector">
+                                                                                                                  <block type="Boolean">
+                                                                                                                    <field name="BOOL">TRUE</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <next>
+                                                                                                                  <block type="SetWorldIconPosition">
                                                                                                                     <value name="VALUE-0">
-                                                                                                                      <block type="Number">
-                                                                                                                        <field name="NUM">-84.1</field>
+                                                                                                                      <block type="WorldIconsItem">
+                                                                                                                        <field name="VALUE-0">WorldIcons</field>
+                                                                                                                        <field name="VALUE-1">C</field>
                                                                                                                       </block>
                                                                                                                     </value>
                                                                                                                     <value name="VALUE-1">
-                                                                                                                      <block type="Number">
-                                                                                                                        <field name="NUM">76</field>
-                                                                                                                      </block>
-                                                                                                                    </value>
-                                                                                                                    <value name="VALUE-2">
-                                                                                                                      <block type="Number">
-                                                                                                                        <field name="NUM">269.9</field>
+                                                                                                                      <block type="CreateVector">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">-84.1</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <value name="VALUE-1">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">76</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <value name="VALUE-2">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">269.9</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
                                                                                                                       </block>
                                                                                                                     </value>
                                                                                                                   </block>
-                                                                                                                </value>
+                                                                                                                </next>
                                                                                                               </block>
                                                                                                             </next>
                                                                                                           </block>
@@ -14949,7 +14976,7 @@
                                                                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                                                                   <block type="WorldIconImagesItem">
                                                                                                                                                                                                     <field name="VALUE-0">WorldIconImages</field>
-                                                                                                                                                                                                    <field name="VALUE-1">Cross</field>
+                                                                                                                                                                                                    <field name="VALUE-1">DangerPing</field>
                                                                                                                                                                                                   </block>
                                                                                                                                                                                                 </value>
                                                                                                                                                                                                 <next>
@@ -22379,37 +22406,19 @@
                                                                         <statement name="CONDITIONS">
                                                                           <block type="conditionBlock">
                                                                             <value name="CONDITION">
-                                                                              <block type="And">
+                                                                              <block type="Equals">
                                                                                 <value name="VALUE-0">
-                                                                                  <block type="Equals">
+                                                                                  <block type="GetTeamId">
                                                                                     <value name="VALUE-0">
-                                                                                      <block type="GetTeamId">
-                                                                                        <value name="VALUE-0">
-                                                                                          <block type="EventPlayer"></block>
-                                                                                        </value>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <value name="VALUE-1">
-                                                                                      <block type="GetTeamId">
-                                                                                        <value name="VALUE-0">
-                                                                                          <block type="Number">
-                                                                                            <field name="NUM">1</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                      </block>
+                                                                                      <block type="EventPlayer"></block>
                                                                                     </value>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="VALUE-1">
-                                                                                  <block type="GetVariable">
+                                                                                  <block type="GetTeamId">
                                                                                     <value name="VALUE-0">
-                                                                                      <block type="variableReferenceBlock">
-                                                                                        <mutation isObjectVar="true"></mutation>
-                                                                                        <field name="OBJECTTYPE">Player</field>
-                                                                                        <field name="VAR" id="6-VZ$Pz)Lh?`8%+OeBw." variabletype="Player">SelfRes</field>
-                                                                                        <value name="OBJECT">
-                                                                                          <block type="EventPlayer"></block>
-                                                                                        </value>
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">1</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
@@ -22436,29 +22445,47 @@
                                                                               </block>
                                                                             </value>
                                                                             <next>
-                                                                              <block type="SetVariable">
+                                                                              <block type="If">
                                                                                 <value name="VALUE-0">
-                                                                                  <block type="variableReferenceBlock">
-                                                                                    <mutation isObjectVar="true"></mutation>
-                                                                                    <field name="OBJECTTYPE">Player</field>
-                                                                                    <field name="VAR" id="6-VZ$Pz)Lh?`8%+OeBw." variabletype="Player">SelfRes</field>
-                                                                                    <value name="OBJECT">
-                                                                                      <block type="EventPlayer"></block>
-                                                                                    </value>
-                                                                                  </block>
-                                                                                </value>
-                                                                                <value name="VALUE-1">
-                                                                                  <block type="Boolean">
-                                                                                    <field name="BOOL">FALSE</field>
-                                                                                  </block>
-                                                                                </value>
-                                                                                <next>
-                                                                                  <block type="ForceRevive">
+                                                                                  <block type="GetVariable">
                                                                                     <value name="VALUE-0">
-                                                                                      <block type="EventPlayer"></block>
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                                        <field name="VAR" id="6-VZ$Pz)Lh?`8%+OeBw." variabletype="Player">SelfRes</field>
+                                                                                        <value name="OBJECT">
+                                                                                          <block type="EventPlayer"></block>
+                                                                                        </value>
+                                                                                      </block>
                                                                                     </value>
                                                                                   </block>
-                                                                                </next>
+                                                                                </value>
+                                                                                <statement name="DO">
+                                                                                  <block type="SetVariable">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                                        <field name="VAR" id="6-VZ$Pz)Lh?`8%+OeBw." variabletype="Player">SelfRes</field>
+                                                                                        <value name="OBJECT">
+                                                                                          <block type="EventPlayer"></block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="Boolean">
+                                                                                        <field name="BOOL">FALSE</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="ForceRevive">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="EventPlayer"></block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </statement>
                                                                               </block>
                                                                             </next>
                                                                           </block>
@@ -22753,34 +22780,65 @@
                                                                                           </block>
                                                                                         </value>
                                                                                         <next>
-                                                                                          <block type="Teleport">
+                                                                                          <block type="WaitUntil">
                                                                                             <value name="VALUE-0">
-                                                                                              <block type="EventPlayer"></block>
+                                                                                              <block type="Number">
+                                                                                                <field name="NUM">5</field>
+                                                                                              </block>
                                                                                             </value>
                                                                                             <value name="VALUE-1">
-                                                                                              <block type="GetVariable">
+                                                                                              <block type="GetSoldierState">
                                                                                                 <value name="VALUE-0">
-                                                                                                  <block type="variableReferenceBlock">
-                                                                                                    <mutation isObjectVar="true"></mutation>
-                                                                                                    <field name="OBJECTTYPE">Player</field>
-                                                                                                    <field name="VAR" id="@s=NDAoX,nup-.gHdvq," variabletype="Player">TakeDown_ReDeplopy_Pos</field>
-                                                                                                    <value name="OBJECT">
-                                                                                                      <block type="EventPlayer"></block>
-                                                                                                    </value>
+                                                                                                  <block type="EventPlayer"></block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="SoldierStateBoolItem">
+                                                                                                    <field name="VALUE-0">SoldierStateBool</field>
+                                                                                                    <field name="VALUE-1">IsOnGround</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                               </block>
                                                                                             </value>
-                                                                                            <value name="VALUE-2">
-                                                                                              <block type="Number">
-                                                                                                <field name="NUM">0</field>
-                                                                                              </block>
-                                                                                            </value>
                                                                                             <next>
-                                                                                              <block type="ForceManDown">
+                                                                                              <block type="Wait">
                                                                                                 <value name="VALUE-0">
-                                                                                                  <block type="EventPlayer"></block>
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">0.1</field>
+                                                                                                  </block>
                                                                                                 </value>
+                                                                                                <next>
+                                                                                                  <block type="Teleport">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="EventPlayer"></block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="GetVariable">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="variableReferenceBlock">
+                                                                                                            <mutation isObjectVar="true"></mutation>
+                                                                                                            <field name="OBJECTTYPE">Player</field>
+                                                                                                            <field name="VAR" id="@s=NDAoX,nup-.gHdvq," variabletype="Player">TakeDown_ReDeplopy_Pos</field>
+                                                                                                            <value name="OBJECT">
+                                                                                                              <block type="EventPlayer"></block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-2">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">0</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="ForceManDown">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="EventPlayer"></block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </next>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
@@ -23995,7 +24053,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" collapsed="true" deletable="false" x="1273" y="2552">
+  <block type="subroutineBlock" collapsed="true" deletable="false" x="1289" y="2547">
     <field name="SUBROUTINE_NAME">BuyDoor3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -24730,7 +24788,7 @@
                                                                                                                                           </block>
                                                                                                                                         </value>
                                                                                                                                         <next>
-                                                                                                                                          <block type="EnableWorldIconText">
+                                                                                                                                          <block type="SetWorldIconImage">
                                                                                                                                             <value name="VALUE-0">
                                                                                                                                               <block type="WorldIconsItem">
                                                                                                                                                 <field name="VALUE-0">WorldIcons</field>
@@ -24738,12 +24796,13 @@
                                                                                                                                               </block>
                                                                                                                                             </value>
                                                                                                                                             <value name="VALUE-1">
-                                                                                                                                              <block type="Boolean">
-                                                                                                                                                <field name="BOOL">TRUE</field>
+                                                                                                                                              <block type="WorldIconImagesItem">
+                                                                                                                                                <field name="VALUE-0">WorldIconImages</field>
+                                                                                                                                                <field name="VALUE-1">Cross</field>
                                                                                                                                               </block>
                                                                                                                                             </value>
                                                                                                                                             <next>
-                                                                                                                                              <block type="EnableWorldIconImage">
+                                                                                                                                              <block type="EnableWorldIconText">
                                                                                                                                                 <value name="VALUE-0">
                                                                                                                                                   <block type="WorldIconsItem">
                                                                                                                                                     <field name="VALUE-0">WorldIcons</field>
@@ -24755,6 +24814,21 @@
                                                                                                                                                     <field name="BOOL">TRUE</field>
                                                                                                                                                   </block>
                                                                                                                                                 </value>
+                                                                                                                                                <next>
+                                                                                                                                                  <block type="EnableWorldIconImage">
+                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                      <block type="WorldIconsItem">
+                                                                                                                                                        <field name="VALUE-0">WorldIcons</field>
+                                                                                                                                                        <field name="VALUE-1">E</field>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                      <block type="Boolean">
+                                                                                                                                                        <field name="BOOL">TRUE</field>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                  </block>
+                                                                                                                                                </next>
                                                                                                                                               </block>
                                                                                                                                             </next>
                                                                                                                                           </block>
@@ -25969,132 +26043,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="WaitUntil" x="-1203" y="24727">
-    <value name="VALUE-0">
-      <block type="Number">
-        <field name="NUM">9999</field>
-      </block>
-    </value>
-    <value name="VALUE-1">
-      <block type="Or">
-        <value name="VALUE-0">
-          <block type="Or">
-            <value name="VALUE-0">
-              <block type="GetSoldierState">
-                <value name="VALUE-0">
-                  <block type="EventPlayer"></block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="SoldierStateBoolItem">
-                    <field name="VALUE-0">SoldierStateBool</field>
-                    <field name="VALUE-1">IsAlive</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Not">
-                <value name="VALUE-0">
-                  <block type="GetSoldierState">
-                    <value name="VALUE-0">
-                      <block type="EventPlayer"></block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="SoldierStateBoolItem">
-                        <field name="VALUE-0">SoldierStateBool</field>
-                        <field name="VALUE-1">IsManDown</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="GetSoldierState">
-            <value name="VALUE-0">
-              <block type="EventPlayer"></block>
-            </value>
-            <value name="VALUE-1">
-              <block type="SoldierStateBoolItem">
-                <field name="VALUE-0">SoldierStateBool</field>
-                <field name="VALUE-1">IsManDown</field>
-              </block>
-            </value>
-          </block>
-        </value>
-      </block>
-    </value>
-    <next>
-      <block type="If">
-        <mutation elseif="2"></mutation>
-        <value name="VALUE-0">
-          <block type="GetSoldierState">
-            <value name="VALUE-0">
-              <block type="EventPlayer"></block>
-            </value>
-            <value name="VALUE-1">
-              <block type="SoldierStateBoolItem">
-                <field name="VALUE-0">SoldierStateBool</field>
-                <field name="VALUE-1">IsAlive</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="Abort"></block>
-        </statement>
-        <value name="IF1">
-          <block type="GetSoldierState">
-            <value name="VALUE-0">
-              <block type="EventPlayer"></block>
-            </value>
-            <value name="VALUE-1">
-              <block type="SoldierStateBoolItem">
-                <field name="VALUE-0">SoldierStateBool</field>
-                <field name="VALUE-1">IsManDown</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO1">
-          <block type="Abort"></block>
-        </statement>
-        <value name="IF2">
-          <block type="Not">
-            <value name="VALUE-0">
-              <block type="GetSoldierState">
-                <value name="VALUE-0">
-                  <block type="EventPlayer"></block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="SoldierStateBoolItem">
-                    <field name="VALUE-0">SoldierStateBool</field>
-                    <field name="VALUE-1">IsManDown</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </value>
-      </block>
-    </next>
-  </block>
-  <block type="And" x="-71" y="24850">
-    <value name="VALUE-1">
-      <block type="EventDeathTypeCompare">
-        <value name="VALUE-0">
-          <block type="EventDeathType"></block>
-        </value>
-        <value name="VALUE-1">
-          <block type="PlayerDeathTypesItem">
-            <field name="VALUE-0">PlayerDeathTypes</field>
-            <field name="VALUE-1">Melee</field>
-          </block>
-        </value>
-      </block>
-    </value>
   </block>
 </xml>
