@@ -15276,7 +15276,7 @@
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Number">
-                                    <field name="NUM">5</field>
+                                    <field name="NUM">4</field>
                                   </block>
                                 </value>
                               </block>
